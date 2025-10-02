@@ -858,7 +858,7 @@ export class SupabaseApiService {
     };
   }
 
-  isBackendOnline(): boolean {
+  getBackendOnlineStatus(): boolean {
     return this.isBackendOnline;
   }
 
