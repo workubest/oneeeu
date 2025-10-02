@@ -13,7 +13,6 @@
         'next-themes@0.4.6': 'next-themes',
         'figma:asset/a7b96e6fbe59cc65b1f1fae75f58ca6158a2d650.png': path.resolve(__dirname, './src/assets/a7b96e6fbe59cc65b1f1fae75f58ca6158a2d650.png'),
         '@supabase/supabase-js@2': '@supabase/supabase-js',
-        '@jsr/supabase__supabase-js@2.49.8': '@jsr/supabase__supabase-js',
         '@': path.resolve(__dirname, './src'),
       },
     },
