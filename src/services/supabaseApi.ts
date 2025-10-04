@@ -307,7 +307,6 @@ export class SupabaseApiService {
     try {
       const headers: Record<string, string> = {
         'Content-Type': 'application/json',
-        'apikey': CONFIG.SUPABASE_ANON_KEY,
         'Authorization': `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
       };
 
