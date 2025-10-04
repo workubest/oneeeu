@@ -12,10 +12,11 @@ app.use(
   "/*",
   cors({
     origin: "*",
-    allowHeaders: ["Content-Type", "Authorization", "X-Client-Info", "Apikey"],
+    allowHeaders: ["Content-Type", "Authorization", "X-Client-Info", "apikey", "x-client-info"],
     allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     exposeHeaders: ["Content-Length"],
     maxAge: 600,
+    credentials: true,
   }),
 );
 
@@ -78,7 +79,7 @@ async function authenticateUser(authToken: string): Promise<{ user: User; isVali
 app.get('/make-server-3ab915fe/health', (c) => {
   return c.json({
     success: true,
-    data: { version: '3.5.0-fixed', mode: 'production', status: 'online' },
+    data: { version: '3.5.1-cors-fixed', mode: 'production', status: 'online' },
     message: 'EEU CMS - Supabase Backend Online'
   });
 });
